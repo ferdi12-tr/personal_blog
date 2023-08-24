@@ -27,3 +27,51 @@
     color: white;
     font-weight: 400; 
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: auto;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    font-family: "brush script mt", cursive;
+    font-style: italic;
+    font-size:small;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.menuItem {
+    list-style: none;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.menuItem:hover {
+    background-color:red;
+}
+.menuItem a {
+    text-decoration: none;
+    color: white;
+}
+
+
