@@ -263,6 +263,20 @@
 	float: right;
 }
 
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Öğeleri yatayda ortalar */
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 /* @media (max-width: 1000px) {
