@@ -8,6 +8,7 @@
         <meta name="author", content="Ferdi Koca">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -25,9 +26,12 @@
                     <li class="menuItem"><a href="#">Anasayfa</a></li>
                     <li class="menuItem"><a href="cv.html">CV</a></li>
                     <li class="menuItem"><a href="iletisim.html">İletişim</a></li>
+                    <li class="menuItem"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!--Main section containing blog post widget cards-->
         <section>
             <div class="mainbox">
                 <a href="./pages/cnn.html">
@@ -61,6 +65,8 @@
                 </a>
             </div>
         </section>
+
+        <!-- Pagination section-->
         <section>
             <div class="pagination">
                 <a href="#">&laquo;</a>
@@ -73,6 +79,36 @@
                 <a href="#">&raquo;</a>
             </div>
         </section>
+
+        <!-- popup login section-->
+        <section>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+        
+                    <div class="container">
+
+                        <input type="text" placeholder="Kullanıcı Adını Gir" name="uname" required>
+        
+                        <input type="password" placeholder="Şifreni Gir" name="psw" required>
+                        
+                        <button type="submit">Giriş</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Beni hatırla
+                        </label>
+                    </div>
+        
+                    <div class="container">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">İptal</button>
+                        <span class="psw">Şifremi <a href="#">Unuttum</a></span>
+                    </div>
+                </form>
+                </div>
+        </section>
+
+        <!-- Footer section -->
 		<footer class="footer-style" id="footer-section">
 			<div class="footer-left">
 				<p class="footer-bloggername">Ferdi KOCA © 2023</p>
@@ -98,6 +134,16 @@
                 current_date.innerHTML = t.toLocaleDateString();
             }, 1000)
         </script>
+
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script>
+
     </body>
 </html>
 
