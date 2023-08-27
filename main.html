@@ -86,7 +86,21 @@
 					<a href="https://github.com/ferdi12-tr" target="_blank"><i class="fa fa-github"></i></a>
 				</div>
 			</div>
+            <div class="footer-right">
+                <p id="current-date"></p>
+                <p id="current-time"></p>
+            </div>
 		</footer>
+
+        <script>
+            let time = document.getElementById("current-time")
+            let current_date = document.getElementById("current-date")
+            setInterval(() => {
+                let t = new Date();
+                time.innerHTML = t.toLocaleTimeString();
+                current_date.innerHTML = t.toLocaleDateString();
+            }, 1000)
+        </script>
     </body>
 </html>
 

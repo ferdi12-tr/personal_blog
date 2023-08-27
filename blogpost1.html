@@ -17,5 +17,23 @@
     <a href="https://github.com/ferdi12-tr">
         <img src="./images/ferdi_git.jpg" alt="ferdi_git" width="100">
     </a>
+
+    <div class="date">
+        <h1 id="current-time">
+
+        </h1>
+        <h1 id="current-date">
+
+        </h1>
+    </div>
+<script>
+    let time = document.getElementById("current-time")
+    let current_date = document.getElementById("current-date")
+    setInterval(() => {
+        let t = new Date();
+        time.innerHTML = t.toLocaleTimeString();
+        current_date.innerHTML = t.toLocaleDateString();
+    }, 1000)
+</script>
 </body>
 </html>

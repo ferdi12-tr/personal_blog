@@ -15,10 +15,15 @@
 	float: left;
 }
 
-.footer-style h3{
-	color:  #ffffff;
-	margin: 0 0 10px;
+.footer-style .footer-right{
+	float: right;
 }
+
+.footer-style .footer-right p{
+	color: #8f9296;
+	font-size: 15px;
+}
+
 
 
 .footer-style .footer-bloggername{
