@@ -20,18 +20,6 @@
 	margin: 0 0 10px;
 }
 
-.footer-style .footer-links{
-	color:  #ffffff;
-	margin: 0 0 10px;
-	padding: 0;
-}
-
-.footer-style .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
 
 .footer-style .footer-bloggername{
 	color:  #8f9296;
@@ -59,72 +47,4 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
-}
-
-.footer-style .footer-right{
-	float: right;
-}
-
-.footer-style .footer-right p{
-	display: inline-block;
-	vertical-align: top;
-	margin: 15px 42px 0 0;
-	color: #ffffff;
-}
-
-.footer-style form{
-	display: inline-block;
-}
-
-.footer-style form input,
-.footer-style form textarea{
-	display: block;
-	border-radius: 3px;
-	box-sizing: border-box;
-	background-color:  #1f2022;
-	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-	border: none;
-	resize: none;
-
-	font: inherit;
-	font-size: 14px;
-	font-weight: normal;
-	color:  #d1d2d2;
-
-	width: 400px;
-	padding: 18px;
-}
-
-.footer-style ::-webkit-input-placeholder {
-	color:  #5c666b;
-}
-
-.footer-style ::-moz-placeholder {
-	color:  #5c666b;
-	opacity: 1;
-}
-
-.footer-style :-ms-input-placeholder{
-	color:  #5c666b;
-}
-
-
-.footer-style form input{
-	height: 55px;
-	margin-bottom: 15px;
-}
-
-.footer-style form textarea{
-	height: 100px;
-	margin-bottom: 20px;
-}
-
-.footer-style form button{
-	border-radius: 3px;
-	background-color:  #33383b;
-	color: #ffffff;
-	border: 0;
-	padding: 15px 50px;
-	font-weight: bold;
-	float: right;
 }
