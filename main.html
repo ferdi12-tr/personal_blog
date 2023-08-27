@@ -14,22 +14,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
+
+    
     <body id="site-background">
-        <div class="header_image">
-            <h1 class="site_title">fkoca.io</h1>
-            <p class="site_desc">Merhaba! Bu kişisel blog sitesi ile öğrendiklerimi kendi bakış açımla paylaşıyorum..</p>
-            <nav class="navbar">
-                <div class="logo">
-                <h1>Ferdi KOCA</h1>
-                </div>
-                <ul class="menu">
-                    <li class="menuItem"><a href="#">Anasayfa</a></li>
-                    <li class="menuItem"><a href="cv.html">CV</a></li>
-                    <li class="menuItem"><a href="iletisim.html">İletişim</a></li>
-                    <li class="menuItem"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş</a></li>
-                </ul>
-            </nav>
-        </div>
+
+        <!-- Navbar and site header background image section -->
+        <section>
+            <div class="header-image">
+                <h1 class="site-title">fkoca.io</h1>
+                <p class="site-desc">Merhaba! Bu kişisel blog sitesi ile öğrendiklerimi kendi bakış açımla paylaşıyorum..</p>
+                <nav class="navbar">
+                    <div class="logo">
+                    <h1>Ferdi KOCA</h1>
+                    </div>
+                    <ul class="menu">
+                        <li class="menuItem"><a href="#">Anasayfa</a></li>
+                        <li class="menuItem"><a href="cv.html">CV</a></li>
+                        <li class="menuItem"><a href="iletisim.html">İletişim</a></li>
+                        <li class="menuItem"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
         <!--Main section containing blog post widget cards-->
         <section>
@@ -70,7 +76,7 @@
         <section>
             <div class="pagination">
                 <a href="#">&laquo;</a>
-                <a href="#">1</a>
+                <a href="#" style="font-weight: bold;">1</a>
                 <a href="#">2</a>
                 <a href="#">3</a>
                 <a href="#">4</a>
@@ -125,24 +131,30 @@
             </div>
 		</footer>
 
-        <script>
-            let time = document.getElementById("current-time")
-            let current_date = document.getElementById("current-date")
-            setInterval(() => {
-                let t = new Date();
-                time.innerHTML = t.toLocaleTimeString();
-                current_date.innerHTML = t.toLocaleDateString();
-            }, 1000)
-        </script>
+        <!-- javascript section -->
+        <section>
 
-        <script>
-            var modal = document.getElementById('id01');
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            }
-        </script>
+            <!-- Get current date and time -->
+            <script>
+                let time = document.getElementById("current-time")
+                let current_date = document.getElementById("current-date")
+                setInterval(() => {
+                    let t = new Date();
+                    time.innerHTML = t.toLocaleTimeString();
+                    current_date.innerHTML = t.toLocaleDateString();
+                }, 1000)
+            </script>
+    
+            <!-- function for pop-up login -->
+            <script>
+                var modal = document.getElementById('id01');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+            </script>
+        </section>
 
     </body>
 </html>
