@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fkoca.io - Main</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description", content="This is a blog site">
+        <meta name="author", content="Ferdi Koca">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    
+    <body id="site-background">
+
+        <!-- Navbar and site header background image section -->
+        <section>
+            <div class="header-image">
+                <h1 class="site-title">fkoca.io</h1>
+                <p class="site-desc">Merhaba! Bu kişisel blog sitesi ile öğrendiklerimi kendi bakış açımla paylaşıyorum..</p>
+                <nav class="navbar">
+                    <div class="logo">
+                    <h1>Ferdi KOCA</h1>
+                    </div>
+                    <ul class="menu">
+                        <li class="menuItem"><a href="#">Anasayfa</a></li>
+                        <li class="menuItem"><a href="cv.html">CV</a></li>
+                        <li class="menuItem"><a href="iletisim.html">İletişim</a></li>
+                        <li class="menuItem"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!--Main section containing blog post widget cards-->
+        <section>
+            <div class="mainbox">
+                <a href="./pages/cnn.html">
+                    <h3 class="box-title">Görüntü İşlemede Büyük Bir Adım: Convolutional Neural Network'ler</h3>
+                    <img src="https://miro.medium.com/v2/resize:fit:1358/1*vkQ0hXDaQv57sALXAJquxA.jpeg" alt="What is cnn?">
+                </a>
+            </div>
+            <div class="mainbox">
+                <a href="./pages/transformer.html">
+                    <h3 class="box-title">Transformer Mimarisi: Dil İşleme ve Yapay Zeka İçin Devrim Niteliğinde Bir Adım</h3>
+                    <img src="https://theaisummer.com/static/6122618d7e1466853e88473ba375cdc7/ee604/transformer.png" alt="What is transformer architecture?">
+                </a>
+            </div>
+            <div class="mainbox">
+                <a href="./pages/uxuı.html">
+                    <h3 class="box-title">Kullanıcı Deneyiminde Büyülü Dokunuş: UI/UX Tasarımının Önemi</h3>
+                    <img src="https://cremicro.com/wp-content/uploads/2020/10/ux-3.jpg" alt="What is css?">
+                </a>
+            </div>
+            <div class="mainbox">
+                <a href="./pages/sql.html">
+                    <h3 class="box-title">Veritabanı Dünyasının Temel Taşı: SQL'in Mantığı ve Çalışma Prensipleri</h3>
+                    <img src="https://blog.hostingdunyam.com.tr/wp-content/uploads/2022/07/sql-nedir.png" alt="What is sql?">
+                </a>
+            </div>
+            <div class="mainbox">
+                
+                <a href="./pages/nlp.html">
+                    <h3 class="box-title">Doğal Dil İşleme (Natural Language Processing) Nedir?</h3>
+                    <img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2023/04/%C2%A9-shutterstockPeachShutterStock_1928145566.jpg" alt="What is nlp?">
+                </a>
+            </div>
+        </section>
+
+        <!-- Pagination section-->
+        <section>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" style="font-weight: bold;">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </section>
+
+        <!-- popup login section-->
+        <section>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+        
+                    <div class="container">
+
+                        <input type="text" placeholder="Kullanıcı Adını Gir" name="uname" required>
+        
+                        <input type="password" placeholder="Şifreni Gir" name="psw" required>
+                        
+                        <button type="submit">Giriş</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Beni hatırla
+                        </label>
+                    </div>
+        
+                    <div class="container">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">İptal</button>
+                        <span class="psw">Şifremi <a href="#">Unuttum</a></span>
+                    </div>
+                </form>
+                </div>
+        </section>
+
+        <!-- Footer section -->
+		<footer class="footer-style" id="footer-section">
+			<div class="footer-left">
+				<p class="footer-bloggername">Ferdi KOCA © 2023</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/f-koca/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/ferdi12-tr" target="_blank"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+            <div class="footer-right">
+                <p id="current-date"></p>
+                <p id="current-time"></p>
+            </div>
+		</footer>
+
+        <!-- javascript section -->
+        <section>
+
+            <!-- Get current date and time -->
+            <script>
+                let time = document.getElementById("current-time")
+                let current_date = document.getElementById("current-date")
+                setInterval(() => {
+                    let t = new Date();
+                    time.innerHTML = t.toLocaleTimeString();
+                    current_date.innerHTML = t.toLocaleDateString();
+                }, 1000)
+            </script>
+    
+            <!-- function for pop-up login -->
+            <script>
+                var modal = document.getElementById('id01');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                }
+            </script>
+        </section>
+
+    </body>
+</html>
+
+

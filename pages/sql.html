@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fkoca.io</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description", content="This is a blog site">
+        <meta name="author", content="Ferdi Koca">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/pages.css">
+        <link rel="stylesheet" href="../css/comment.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body id="site-background">
+
+        <!-- Navbar and site header background image section -->
+        <section>
+            <div class="header-image">
+                <h1 class="site-title">fkoca.io</h1>
+                <p class="site-desc">Merhaba! Bu kişisel blog sitesi ile öğrendiklerimi kendi bakış açımla paylaşıyorum..</p>
+                <nav class="navbar">
+                    <div class="logo">
+                    <h1>Ferdi KOCA</h1>
+                    </div>
+                    <ul class="menu">
+                        <li class="menuItem"><a href="../main.html">Anasayfa</a></li>
+                        <li class="menuItem"><a href="../cv.html">CV</a></li>
+                        <li class="menuItem"><a href="../iletisim.html">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section>
+            <article class="pages">
+                <h2>Veritabanı Dünyasının Temel Taşı: SQL'in Mantığı ve Çalışma Prensipleri</h2>
+                <p>
+                    Merhaba değerli okurlar! Teknolojinin gelişmesiyle birlikte verilerin saklanması ve yönetilmesi de büyük bir önem kazandı. İşte bu noktada karşımıza SQL (Structured Query Language) çıkıyor. Veritabanı yönetiminin temel taşı olan SQL'in temel mantığını ve nasıl çalıştığını bu yazımızda keşfedeceğiz.
+                </p>
+                <span>
+                    <h3>
+                        SQL Nedir ve Ne İşe Yarar?
+                    </h3>
+                </span>
+                <p>
+                    SQL, yapılandırılmış sorgu dili anlamına gelir. Temel olarak, verileri veritabanlarına eklemek, güncellemek, sorgulamak ve silmek için kullanılır. SQL sayesinde verilerin düzenli bir şekilde depolanması ve gerektiğinde hızlı bir şekilde erişilmesi mümkün olur. Bu dili özel kılan ise basit ve anlaşılır yapısıdır.
+                </p>
+                <span>
+                    <h3>
+                        SQL'in Temel Mantığı
+                    </h3>
+                </span>
+                <p>
+                    <ul>
+                        SQL'in çalışma mantığı, veritabanlarına sorgu atarak belirli işlemleri gerçekleştirmek üzerine kuruludur. İşte SQL'in temel mantığı adım adım açıklaması:
+
+                        <li><h4>Veritabanı Oluşturma:</h4></li> İlk adım veritabanı oluşturmadır. Veritabanı, verilerin düzenli bir şekilde saklandığı bir depodur. Bu depoda tablolar, sütunlar ve veri satırları bulunur.
+
+                        <li><h4>Tablo Oluşturma:</h4></li> Verileri düzenli bir şekilde saklamak için tablolar oluşturulur. Her tablo, belirli bir konu veya veri tipine göre düzenlenmiş sütunlardan oluşur. Örneğin, bir "Customers" tablosu müşteri bilgilerini içerebilir.
+
+                        <li><h4>Veri Ekleme (INSERT):</h4></li> Tablolar oluşturulduktan sonra, veriler bu tablolara eklenir. Bu adımda SQL INSERT komutu kullanılır. Yeni veri satırları ekleyerek veritabanını güncelleyebilirsiniz.
+
+                        <li><h4>Veri Sorgulama (SELECT):</h4></li> Oluşturulan veritabanındaki verilere erişmek için SELECT komutu kullanılır. Bu komut sayesinde istediğiniz veriyi belirli kriterlere göre sorgulayabilir ve sonuçları elde edebilirsiniz.
+
+                        <li><h4>Veri Güncelleme (UPDATE) ve Silme (DELETE):</h4></li> Mevcut verileri güncellemek veya silmek istediğinizde sırasıyla UPDATE ve DELETE komutları kullanılır. Bu sayede verilerin doğru ve güncel kalması sağlanır.
+                
+                    </ul>
+                </p>
+                <span>
+                    <h3>
+                        SQL Sorgularının Çalışma Sırası
+                    </h3>
+                </span>
+                <p>
+                    <ul>
+                        SQL sorguları, belirli bir sıraya göre çalışır:
+
+                        <li><h4>FROM:</h4></li> Hangi tablodan veri çekmek istediğinizi belirtir.
+
+                        <li><h4>WHERE:</h4></li> Hangi verileri çekmek istediğinizi belirtir. Belirli bir koşulu sağlayan verileri seçmek için kullanılır.
+
+                        <li><h4>SELECT:</h4></li> Hangi sütunları seçeceğinizi belirtir. Tüm sütunları veya belirli sütunları seçebilirsiniz.
+
+                        <li><h4>GROUP BY:</h4></li> İstatistiksel verileri gruplamak için kullanılır.
+
+                        <li><h4>HAVING:</h4></li> GROUP BY sonrası belirli koşulları sağlayan grupları seçmek için kullanılır.
+
+                        <li><h4>ORDER BY:</h4></li> Verileri belirli bir sıraya göre sıralamak için kullanılır.
+                    </ul>
+                </p>
+                <span>
+                    <h3>
+                        Sonuç
+                    </h3>
+                </span>
+                <p>
+                    SQL, veritabanı yönetiminin temel taşıdır ve verilerin etkili bir şekilde yönetilmesini sağlar. Temel mantığı, veritabanı oluşturma, tablo oluşturma, veri ekleme, sorgulama ve veri güncelleme/silme adımlarından oluşur. SQL sorguları, belirli bir sıraya göre çalışarak istenilen sonuçları üretir. Bu yazı sayesinde SQL'in temel mantığını anlamış olduk. Umarım bu yazı, SQL hakkında temel bir kavrayış kazanmanıza yardımcı olmuştur. Daha fazla detay ve uygulama örnekleri ile SQL'i daha derinlemesine keşfedebilirsiniz.
+                </p>
+            </article>
+        </section>
+
+        <!-- input for gettin user comments -->
+        <section>
+            <div class="comment-style">
+                <div class="comment-right">
+                    <form action="#" method="post">
+                        <input type="text" name="email" placeholder="Email">
+                        <textarea name="message" placeholder="Düşüncelerini paylaş.."></textarea>
+                        <button>Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
+
